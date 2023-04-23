@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>PhotoTrap</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__logo"><img src="./images/logo.png" alt="PhotoTrap" /> PhotoTrap</div>
+      <nav class="nav-links">
+        <a class="nav-link--active" href="admin.html">Panel administracyjny</a>
+        <a href="galeria_fotopulapki.html">Galeria fotopułapki</a>
+        <a class="nav-link--logout" href="#">Wyloguj <i class="bx bx-log-out"></i></a>
+      </nav>
+    </header>
+
+    <main class="admin-panel">
+      <section class="content__header">
+        <h1>Panel administratora</h1>
+      </section>
+      <section class="admin-panel__container">
+        <div class="panel-base left-panel">
+          <section class="table__header">
+            <h2>Użytkownicy</h2>
+            <p>Aktywni użytkownicy: <span class="active">3</span></p>
+          </section>
+          <table class="admin-panel__table">
+            <thead>
+              <tr class="table__row">
+                <th>ID</th>
+                <th>Nazwa użytkownika</th>
+                <th>Data email</th>
+                <th>Usuń</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table__row">
+                <td>1</td>
+                <td>admin</td>
+                <td>admin@email.com</td>
+                <td><i class="bx bx-trash"></i></td>
+              </tr>
+              <tr class="table__row">
+                <td>2</td>
+                <td>jan_nowak</td>
+                <td>jan_nowak@email.com</td>
+                <td><i class="bx bx-trash"></i></td>
+              </tr>
+              <tr class="table__row">
+                <td>3</td>
+                <td>adam_kowalski</td>
+                <td>adam_kowalski@email.com</td>
+                <td><i class="bx bx-trash"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel-base right-panel">
+          <section class="table__header">
+            <h2>Dodaj użytkownika</h2>
+            <p></p>
+          </section>
+          <form class="admin-panel__form">
+            <input
+              class="main-input"
+              type="email"
+              name="email"
+              placeholder="Adres e-mail"
+              style="margin-bottom: 36px"
+              required
+            />
+            <input
+              class="main-input"
+              type="text"
+              name="username"
+              placeholder="Nazwa użytkownika"
+              required
+              style="margin-bottom: 36px"
+            />
+            <input
+              class="main-input"
+              type="password"
+              name="password"
+              placeholder="Hasło"
+              style="margin-bottom: 36px"
+              required
+            />
+            <input
+              class="main-input"
+              type="password"
+              name="confirm_password"
+              placeholder="Powtórz hasło"
+              style="margin-bottom: 32px"
+              required
+            />
+            <input type="checkbox" id="isAdmin" name="admin" value="isAdmin" />
+            <label for="isAdmin" style="margin-bottom: 64px">Czy jest adminem?</label><br />
+            <button class="main-button" type="submit">Dodaj użytkownika</button>
+            <p class="login__caption">Nastąpi dodanie nowego użytkownika do bazy danych</p>
+          </form>
+        </div>
+      </section>
+      <section class="admin-panel__photos-number">
+        <span></span>
+        <div>
+          <label for="photosNumber">Ilość zdjęć po wykryciu ruchu: </label>
+          <input type="number" max="4" min="1" placeholder="1" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

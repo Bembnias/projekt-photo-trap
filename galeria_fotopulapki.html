@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>PhotoTrap</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__logo"><img src="./images/logo.png" alt="PhotoTrap" /> PhotoTrap</div>
+      <nav class="nav-links">
+        <a href="admin.html">Panel administracyjny</a>
+        <a class="nav-link--active" href="galeria_fotopulapki.html">Galeria fotopułapki</a>
+        <a class="nav-link--logout" href="#">Wyloguj <i class="bx bx-log-out"></i></a>
+      </nav>
+    </header>
+
+    <main class="gallery__main">
+      <section class="content__header">
+        <h1>Zarejestrowane zdarzenia</h1>
+      </section>
+      <section class="gallery">
+        <div class="gallery__card">
+          <img src="./images/placeholder.png" alt="Zdjęcie 1" />
+          <div class="gallery__card-description">
+            <p>Data: 23 luty 2023</p>
+            <p>Godzina: 15:30</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="./images/placeholder.png" alt="Zdjęcie 2" />
+          <div class="gallery__card-description">
+            <p>Data: 17 kwiecień 2023</p>
+            <p>Godzina: 10:15</p>
+          </div>
+        </div>
+        <div class="gallery__card">
+          <img src="./images/placeholder.png" alt="Zdjęcie 3" />
+          <div class="gallery__card-description">
+            <p>Data: 25 kwiecień 2023</p>
+            <p>Godzina: 12:33</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
