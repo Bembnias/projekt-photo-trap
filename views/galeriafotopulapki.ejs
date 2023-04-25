@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="/images/logo.png" />
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <title>PhotoTrap</title>
   </head>
   <body>
     <header class="navbar">
       <div class="navbar__logo"><img src="./images/logo.png" alt="PhotoTrap" /> PhotoTrap</div>
       <nav class="nav-links">
-        <a href="admin.html">Panel administracyjny</a>
-        <a class="nav-link--active" href="galeria_fotopulapki.html">Galeria fotopułapki</a>
-        <a class="nav-link--logout" href="#">Wyloguj <i class="bx bx-log-out"></i></a>
+        <a href="admin">Panel administracyjny</a>
+        <a class="nav-link--active" href="galeriafotopulapki">Galeria fotopułapki</a>
+        <form action="/wylogowanie" method="POST">
+          <button class="nav-link--logout" type="submit">Wyloguj <i class="bx bx-log-out"></i></button>
+        </form>
       </nav>
     </header>
 
